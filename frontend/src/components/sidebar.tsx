@@ -75,7 +75,7 @@ export function Sidebar({
             >
             <div className="relative">
               <Avatar className="h-11 w-11">
-              <AvatarImage src={contact.profile || "/placeholder.svg"} alt={contact.name} />
+              <AvatarImage src={contact.profile} alt={contact.name} />
               <AvatarFallback className="bg-primary/10 text-primary font-medium">
                 {contact.name.charAt(0)}
               </AvatarFallback>

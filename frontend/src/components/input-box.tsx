@@ -24,8 +24,8 @@ export function MessageInput({ onSendMessage, disabled }: MessageInputProps) {
   }
 
   return (
-    <div className="border-t border-border bg-card p-4">
-      <div className="flex items-end gap-2">
+    <div className="border-t border-border bg-card p-3">
+      <div className="flex items-end gap-1">
         <Button title='Attach' variant="ghost" size="icon" className="h-10 w-10 text-muted-foreground hover:text-foreground shrink-0">
           <Paperclip className="h-5 w-5" />
         </Button>
@@ -37,7 +37,7 @@ export function MessageInput({ onSendMessage, disabled }: MessageInputProps) {
             onKeyDown={handleKeyDown}
             placeholder="Type a message..."
             disabled={disabled}
-            className="min-h-[44px] max-h-32 resize-none bg-secondary/50 border-border/50 focus-visible:ring-primary pr-10"
+            className="min-h-[40px] max-h-32 resize-none bg-secondary/50 border-border/50 focus-visible:ring-primary pr-10"
             rows={1}
           />
           <Button

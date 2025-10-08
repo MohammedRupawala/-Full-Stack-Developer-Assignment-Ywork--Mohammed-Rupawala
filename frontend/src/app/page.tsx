@@ -224,13 +224,13 @@ export default function ChatApp() {
   }
 
   return (
-    <div className="h-screen overflow-hidden bg-background">
+    <div className=" overflow-hidden bg-background">
       <Navbar
         isMobileSidebarOpen={isMobileSidebarOpen}
         onToggleMobileSidebar={() => setIsMobileSidebarOpen(!isMobileSidebarOpen)}
       />
 
-      <div className="flex h-[calc(100vh-4rem)] pt-16">
+      <div className="flex h-[calc(105vh-4rem)] pt-14">
         <Sidebar
           isTyping={isTyping}
           contacts={contacts}
